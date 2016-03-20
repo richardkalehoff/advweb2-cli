@@ -1,0 +1,24 @@
+{
+  "name": "advweb2-cli",
+  "version": "0.1.0",
+  "description": "CLI assistant for for the Advanced Web 2 class at the University of Florida.",
+  "main": "lib/cli.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardkalehoff/advweb2-cli.git"
+  },
+   "keywords": [
+     "cli"
+   ],
+  "author": "Richard Kalehoff II",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardkalehoff/advweb2-cli/issues"
+  },
+  "homepage": "https://github.com/richardkalehoff/advweb2-cli#readme"
+}
