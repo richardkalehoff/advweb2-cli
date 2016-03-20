@@ -48,6 +48,11 @@
     "camelcase": 2,
     "comma-spacing": 2,
     "eol-last": 2,
+    "quotes": [
+      2,
+      "single",
+      "avoid-escape"
+    ],
     "indent": [
       2,
       4,
