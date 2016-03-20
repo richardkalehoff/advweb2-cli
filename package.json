@@ -4,17 +4,25 @@
   "description": "CLI assistant for for the Advanced Web 2 class at the University of Florida.",
   "main": "lib/cli.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-mocha": "^2.2.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
+  },
+  "bin": {
+    "advweb2": "lib/cli.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/richardkalehoff/advweb2-cli.git"
   },
-   "keywords": [
-     "cli"
-   ],
+  "keywords": [
+    "cli"
+  ],
   "author": "Richard Kalehoff II",
   "license": "MIT",
   "bugs": {
