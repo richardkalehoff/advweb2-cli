@@ -1,7 +1,7 @@
 'use strict';
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
-var mocha = require('mocha');
+var mocha = require('gulp-mocha');
 var excludeGitignore = require('gulp-exclude-gitignore');
 
 gulp.task('lint', function () {
@@ -12,17 +12,9 @@ gulp.task('lint', function () {
         .pipe(eslint.failAfterError());
 });
 
-gulp.task('test', function (cb) {
-    var mochaErr;
-
-    gulp.src('tests/**/*.js')
-        .pipe(mocha({reporter: 'spec'}))
-        .on('error', function (err) {
-            mochaErr = err;
-        })
-        .on('end', function () {
-            cb(mochaErr);
-        });
+gulp.task('test', function () {
+    return gulp.src('tests/**/*.js')
+        .pipe(mocha({reporter: 'spec'}));
 });
 
-gulp.task('default', ['lint']);
+gulp.task('default', ['lint', 'test']);
