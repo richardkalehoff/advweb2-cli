@@ -4,7 +4,8 @@
   "description": "CLI assistant for for the Advanced Web 2 class at the University of Florida.",
   "main": "lib/cli.js",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "inquirer": "^1.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
