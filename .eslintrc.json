@@ -5,7 +5,8 @@
   },
   "env": {
     "node": true,
-    "mocha": true
+    "mocha": true,
+    "es6": true
   },
   "rules": {
     "curly": [
@@ -54,7 +55,10 @@
     "quotes": [
       2,
       "single",
-      "avoid-escape"
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
     ],
     "indent": [
       2,
