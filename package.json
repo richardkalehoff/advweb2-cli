@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "CLI assistant for for the Advanced Web 2 class at the University of Florida.",
   "main": "lib/cli.js",
-  "dependencies": {},
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
